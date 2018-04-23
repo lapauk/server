@@ -75,7 +75,7 @@ dockerDistTar {
 docker {
     javaApplication {
         baseImage = 'openjdk:8-jre-alpine'
-//        tag = 'server:latest'
+        tag = 'server:latest'
     }
 }
 
