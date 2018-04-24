@@ -3,7 +3,7 @@ steps:
   args: ['clean', 'dockerBuildImage']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["push", "gcr.io/plucky-paratext-202011/server:1.0-snapshot"]
+  args: ["push", "gcr.io/plucky-paratext-202011/server:latest"]
 
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
@@ -11,7 +11,7 @@ steps:
   - image
   - deployment
   - server-application
-  - server-container=gcr.io/plucky-paratext-202011/server:1.0-snapshot
+  - server-container=gcr.io/plucky-paratext-202011/server:latest
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'
