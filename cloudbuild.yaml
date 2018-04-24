@@ -2,8 +2,8 @@ steps:
 - name: 'gcr.io/cloud-builders/gradle'
   args: ['clean', 'dockerBuildImage']
 
-- name: 'gcr.io/cloud-builders/docker'
-  args: ["push", "gcr.io/plucky-paratext-202011/server:latest"]
+#- name: 'gcr.io/cloud-builders/docker'
+#  args: ["push", "gcr.io/plucky-paratext-202011/server:latest"]
 
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
