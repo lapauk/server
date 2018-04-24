@@ -15,3 +15,6 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'
+
+images:
+- 'server:latest'
