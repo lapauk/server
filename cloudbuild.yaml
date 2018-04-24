@@ -6,7 +6,7 @@ steps:
   - set
   - image
   - deployment
-  - server
+  - server-application
   - server-container=gcr.io/plucky-paratext-202011/server:1.0-snapshot
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
