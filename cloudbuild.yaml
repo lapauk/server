@@ -13,7 +13,7 @@ steps:
   - set
   - image
   - deployment
-  - server-application
+  - server
   - server-container=gcr.io/$PROJECT_ID/server:latest
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
