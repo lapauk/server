@@ -14,7 +14,7 @@ steps:
   - image
   - deployment
   - server
-  - server-container=gcr.io/$PROJECT_ID/server:latest
+  - server=gcr.io/$PROJECT_ID/server:latest
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'
