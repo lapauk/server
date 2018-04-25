@@ -1,4 +1,6 @@
 
-`./gradlew clean dockerBuildImage` to clean and build the docker image
+`./gradlew clean build` to clean and build the jar
 
-`docker run -p8889:8080  lapapps/server:1.0-snapshot` to run the produced docker image
+`docker build -t my-image .` to build the docker image
+
+`docker run -p8889:8080  my-image` to run it
