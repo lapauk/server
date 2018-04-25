@@ -3,7 +3,7 @@ buildscript {
     ext.spring_boot_version = '1.5.4.RELEASE'
 
     repositories {
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -21,7 +21,7 @@ apply plugin: 'org.springframework.boot'
 sourceCompatibility = 1.8
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
